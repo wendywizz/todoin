@@ -1,6 +1,14 @@
 import 'package:flutter/material.dart';
+import 'package:todoin/models/room.dart';
 
 class ResultCard extends StatelessWidget {
+  final Room room;
+
+  const ResultCard({
+    Key key,
+    this.room,
+  }) : super(key: key);
+
   @override
   Widget build(BuildContext context) {
     return Card(
@@ -9,14 +17,14 @@ class ResultCard extends StatelessWidget {
         mainAxisSize: MainAxisSize.min,
         crossAxisAlignment: CrossAxisAlignment.start,
         children: [
-          Image.network('https://i.ytimg.com/vi/mp826KRXtCY/maxresdefault.jpg'),
+          Image.network(room.introImage),
           Padding(
             padding: EdgeInsets.symmetric(vertical: 12.0, horizontal: 10.0),
             child: Column(
               crossAxisAlignment: CrossAxisAlignment.start,
               children: [
                 Text(
-                  'Graphic Design Illustration',
+                  room.name,
                   style: TextStyle(
                     fontSize: 20.0,
                     fontWeight: FontWeight.w500,
@@ -30,7 +38,7 @@ class ResultCard extends StatelessWidget {
                       child: Row(
                         children: [
                           Text(
-                            '\$10-15',
+                            '\$${room.minPrice} - ${room.maxPrice}',
                             style: TextStyle(
                               fontSize: 16.0,
                               fontWeight: FontWeight.w600,
@@ -48,7 +56,7 @@ class ResultCard extends StatelessWidget {
                         children: [
                           Icon(Icons.star, color: Color(0xFFF39C12)),
                           Text(
-                            '4.5',
+                            room.rating.toString(),
                             style: TextStyle(
                               fontSize: 16.0,
                               fontWeight: FontWeight.w600,

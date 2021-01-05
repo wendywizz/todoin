@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:todoin/models/feed.dart';
+import 'package:todoin/models/room.dart';
 import 'package:todoin/models/story.dart';
 
 final List<Story> stories = [
@@ -55,5 +56,40 @@ final List<Feed> feeds = [
     subtitle: 'One word',
     icon: Icons.zoom_out,
     iconColor: Color(0xFF1B9CFC),
+  ),
+];
+
+final List<Room> rooms = [
+  Room(
+    name: 'Banburi Meeting Room',
+    minPrice: 5,
+    maxPrice: 10,
+    rating: 4.3,
+    introImage:
+        'https://designshack.net/wp-content/uploads/flat-design-trend.jpg',
+  ),
+  Room(
+    name: 'Aliz Co-Working Space',
+    minPrice: 7,
+    maxPrice: 12,
+    rating: 4.8,
+    introImage:
+        'https://static.vecteezy.com/system/resources/previews/000/103/286/non_2x/free-flat-design-vector-background.jpg',
+  ),
+  Room(
+    name: 'Party\'s Room',
+    minPrice: 3,
+    maxPrice: 6,
+    rating: 3.3,
+    introImage:
+        'https://huddle.eurostarsoftwaretesting.com/wp-content/uploads/2018/04/free-flat-design-digital-marketing-concep-vector.jpg',
+  ),
+  Room(
+    name: 'Adamantine Bliz',
+    minPrice: 10,
+    maxPrice: 30,
+    rating: 4.2,
+    introImage:
+        'https://image.freepik.com/free-vector/flat-design-content-marketing-system-illustration_5379-124.jpg',
   ),
 ];

@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
-import 'package:todoin/pages/list_page.dart';
-import 'pages/home_page.dart';
+import 'package:todoin/pages/detail_page/detail_page.dart';
+//import 'package:todoin/pages/map_page.dart';
 
 void main() {
   runApp(MyApp());
@@ -18,7 +18,7 @@ class MyApp extends StatelessWidget {
         visualDensity: VisualDensity.adaptivePlatformDensity,
         backgroundColor: Colors.white,
       ),
-      home: ListPage(),
+      home: DetailPage(),
     );
   }
 }

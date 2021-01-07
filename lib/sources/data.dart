@@ -93,3 +93,30 @@ final List<Room> rooms = [
         'https://image.freepik.com/free-vector/flat-design-content-marketing-system-illustration_5379-124.jpg',
   ),
 ];
+
+final List<Room> recents = [
+  Room(
+    name: 'Banburi Meeting Room',
+    minPrice: 5,
+    maxPrice: 10,
+    rating: 4.3,
+    introImage:
+        'https://designshack.net/wp-content/uploads/flat-design-trend.jpg',
+  ),
+  Room(
+    name: 'Aliz Co-Working Space',
+    minPrice: 7,
+    maxPrice: 12,
+    rating: 4.8,
+    introImage:
+        'https://static.vecteezy.com/system/resources/previews/000/103/286/non_2x/free-flat-design-vector-background.jpg',
+  ),
+  Room(
+    name: 'Party\'s Room',
+    minPrice: 3,
+    maxPrice: 6,
+    rating: 3.3,
+    introImage:
+        'https://huddle.eurostarsoftwaretesting.com/wp-content/uploads/2018/04/free-flat-design-digital-marketing-concep-vector.jpg',
+  ),
+];
